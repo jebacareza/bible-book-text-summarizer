@@ -1,1 +1,1 @@
-# bible-book-text-summarizer
+# Text Summarizer for Bible Books
