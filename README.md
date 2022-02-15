@@ -1,3 +1,3 @@
-# Text Summarizer for Bible Books
+# Sentiment Classifier for Movie Reviews
 
-Using natural language processing (NLP) to build a text summarization for every book of the King James Bible.
+Classifying Rotten Tomatoes movie reviews through natural language processing.
