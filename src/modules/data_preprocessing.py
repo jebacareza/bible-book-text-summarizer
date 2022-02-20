@@ -11,7 +11,6 @@ from nltk.stem import WordNetLemmatizer
 
 from collections import Counter
 
-
 stop_words = set(stopwords.words("english"))
 
 def lowercase(text):
@@ -110,8 +109,10 @@ def word_counter(text):
         cnt[word] += 1
     return cnt
 
-
 def create_corpus(df):
+    '''
+    Creates the corpus from a dataframe column
+    '''
     corpus = []
     for text in df['Text']:
         words = [word.lower() for word in word_tokenize(text)]
