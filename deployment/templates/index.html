@@ -1,0 +1,109 @@
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  background-color: #FA320A;
+  margin: 0;
+  font-family: Verdana, Helvetica, sans-serif;
+
+}
+
+img {
+  padding-top: 30px;
+  background-color: #FA320A;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%; 
+  
+}
+
+/* Style the top navigation bar */
+h1 {
+
+  float: center;
+  display: block;
+  background-color: #FA320A;
+  color: #f2f2f2;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 20px; 
+  height:20px;
+}
+
+p {
+
+float: center;
+display: block;
+background-color: #FA320A;
+color: #ffffff;
+text-align: center;
+vertical-align: middle;
+line-height: 20px; 
+height:20px;
+}
+
+
+/* Style the content */
+
+.review {
+  background-color: #ddd;
+  padding: 10px;
+  height: 300px;  /* Should be removed. Only for demonstration */
+  text-align: center;
+  margin:auto
+}
+
+.prediction {
+	 width: 600px;
+}
+
+textarea {
+  
+  width: 50%;
+  padding: 12px 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 5px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 50%;
+  background-color: #FA320A;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align:center;
+}
+
+</style>
+
+<body>
+  
+  <img src = "https://www.rottentomatoes.com/assets/pizza-pie/images/rtlogo.9b892cff3fd.png" alt = "Rotten Tomatoes logo" width = 250>
+   <h1>MOVIE REVIEW SENTIMENT CLASSIFIER</h1>
+   <p>Write a movie review to classify its sentiment.</p>
+
+<div class = "review">
+  <form action="/classify" method="POST" target="_blank">
+ <textarea name="review_text" placeholder="Enter movie review here..." rows="10" cols="15"></textarea>
+  <input type="submit" value="CLASSIFY">
+  
+  
+  </form>
+
+  <br>
+
+  <p>The logo has been taken directly from Rotten Tomatoes. This app is for demo purposes only.</p>
+</div>
+
+
+</body>
+</html>
