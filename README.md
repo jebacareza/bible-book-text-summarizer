@@ -53,7 +53,7 @@ The following preprocessing steps for NLP were applied to each of the reviews on
 6) Removing Stop Words
 7) Lemmatization
 
-The data cleaning and preprocessing notebook can be found [here](.src/01-preprocessing.ipynb)
+The data cleaning and preprocessing notebook can be found [here](src/01-preprocessing.ipynb)
 
 ---
 ### Exploratory Data Analysis
@@ -66,7 +66,7 @@ It's also helpful to note that the cleaned review lengths don't go beyond 30. Th
 
 ![img](output/img/review-lengths-300k.jpg)
 
-The EDA notebook can be found [here](.src/02-eda.ipynb)
+The EDA notebook can be found [here](src/02-eda.ipynb)
 
 ---
 ### GloVe Embeddings
@@ -87,7 +87,7 @@ The baseline model is a LSTM with 300 units and a dropout of 0.1.The Adam optimi
 
 After performing hyperparameter tuning through randomized search cross validation, I fit the model through 20 epochs and a batch size of 64.
 
-The notebook can be found [here](.src/03-modeling.ipynb)
+The notebook can be found [here](src/03-modeling.ipynb)
 
 ---
 
@@ -96,6 +96,10 @@ The notebook can be found [here](.src/03-modeling.ipynb)
 
 After multiple iterations in training, I picked the best model with the following accuracy loss.
 
+![img](output/img/best-model-accuracy.jpg)
+
+
+![img](output/img/best-model-loss.jpg)
 
 
 To prevent overfitting on the training data, a dropout of 0.6 was added to fitting.
@@ -104,9 +108,3 @@ To prevent overfitting on the training data, a dropout of 0.6 was added to fitti
 
 ![img](output/img/base-vs-best-model-loss.jpg)
 
-When plotting the accuracies and losses together, you would notice how
-
-![img](output/img/best-model-accuracy.jpg)
-
-
-![img](output/img/best-model-loss.jpg)
