@@ -24,13 +24,13 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 import flask
 app = Flask(__name__)
 
-filename_pkl_best = '../output/saved_models/model_lstm_best.pkl'
+filename_pkl_best = 'output/saved_models/model_lstm_best.pkl'
 clf = pickle.load(open(filename_pkl_best, 'rb'))
-filename_pkl_tokenizer = '../output/saved_models/tokenizer.pkl'
+filename_pkl_tokenizer = 'output/saved_models/tokenizer.pkl'
 loaded_tokenizer = pickle.load(open(filename_pkl_tokenizer, 'rb'))
 
 import sys
-sys.path.insert(0, '../src/modules/')
+sys.path.insert(0, 'src/modules/')
 from data_preprocessing import *
 
 
