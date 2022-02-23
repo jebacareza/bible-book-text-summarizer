@@ -22,7 +22,7 @@ Being a self-proclaimed movie aficionado and my new interest to pursue the field
 
 This project involves training a model on around 210,000 movie reviews with a goal of accurately classifying review types (whether positive or negative) and get a feel of the sentiment of these reviews. This model is then tested on unseen data with an aim to develop a simple Flask app that takes in a movie review text string and outputs the review label/category.
 
-One of the benefits to applying classification of text through sentiment analysis is the automation of evaluating documents in different industries: from movie reviews to customer reviews.
+One of the benefits to applying classification of text through sentiment analysis is the automation of evaluating documents in different areas: from movie reviews to getting an overall feel for customer feedback in many industries.
 
 ---
 
