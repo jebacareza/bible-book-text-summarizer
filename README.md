@@ -127,9 +127,12 @@ The demo app runs locally for now and will be uploaded to the cloud using Heroku
 
 ### Directory
 
+*src/*
 - **`01-preprocessing.ipynb`** - Cleaning and preprocessing
 - **`02_eda.ipynb`** - Exploratory data analysis
 - **`03-modeling.ipynb`** - Text vectorization using GloVe embeddings, train-test split, building the LSTM model.
 
+*output/saved_models/*
 
-
+- **`model_lstm_best.pkl`** - Best model pickled
+- **`tokenizer.pkl`** - Tokenizer pickled
