@@ -94,17 +94,36 @@ The notebook can be found [here](src/03-modeling.ipynb)
 ### Evaluation
 ---
 
-After multiple iterations in training, I picked the best model with the following accuracy loss.
+The base model tended to overfit.
 
-![img](output/img/best-model-accuracy.jpg)
+![img](output/img/base-model-accuracy.jpg)
+
+![img](output/img/base-model-loss.jpg)
 
 
-![img](output/img/best-model-loss.jpg)
-
-
-To prevent overfitting on the training data, a dropout of 0.6 was added to fitting.
+To prevent overfitting on the training data, a dropout of 0.6 was added to the LSTM layer.
 
 ![img](output/img/base-vs-best-model-accuracy.jpg)
 
 ![img](output/img/base-vs-best-model-loss.jpg)
+
+
+### Demo
+
+The app runs locally
+
+![img](output/img/app-frontend-demo.jpg)
+
+
+
+
+### Directory
+
+
+
+- **`01-preprocessing.ipynb`** - Cleaning and preprocessing
+- **`02_eda.ipynb`** - Exploratory data analysis
+- **`03-modeling.ipynb`** - Text vectorization using GloVe embeddings, train-test split, building the LSTM model.
+
+
 
