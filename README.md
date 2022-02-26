@@ -62,11 +62,20 @@ After around 6% of rows containing missing values were removed, we can find that
 
 ![img](output/img/review-types.jpg)
 
-It's also helpful to note that the cleaned review lengths don't go beyond 30. This can be used during 
+It's also helpful to note that the cleaned review lengths don't go beyond 30. This can be used during text vectorization.
 
 ![img](output/img/review-lengths-300k.jpg)
 
+To view what words the fresh and rotten reviews contain, we can build word clouds for each.
+
+![img](output/img/fresh_tomato_wordcloud_200.png)
+
+![img](output/img/green_splat_wordcloud_200.png)
+
+
 The EDA notebook can be found [here](src/02-eda.ipynb)
+
+
 
 ---
 ### GloVe Embeddings
@@ -110,16 +119,13 @@ To prevent overfitting on the training data, a dropout of 0.6 was added to the L
 
 ### Demo
 
-The app runs locally
+The demo app runs locally for now and will be uploaded to the cloud using Heroku.
 
 ![img](output/img/app-frontend-demo.jpg)
 
 
 
-
 ### Directory
-
-
 
 - **`01-preprocessing.ipynb`** - Cleaning and preprocessing
 - **`02_eda.ipynb`** - Exploratory data analysis
