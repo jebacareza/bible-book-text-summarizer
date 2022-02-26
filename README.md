@@ -121,7 +121,7 @@ To prevent overfitting on the training data, a dropout of 0.6 was added to the L
 
 The demo app runs locally for now and will be uploaded to the cloud using Heroku.
 
-![img](output/img/app-frontend-demo.jpg)
+![img](output/img/app-frontend-demo.JPG)
 
 
 
